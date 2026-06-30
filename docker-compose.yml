@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: cloud-platform-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  terraform-runner:
+    image: hashicorp/terraform:1.9
+    container_name: cloud-platform-terraform
+    entrypoint: ["tail", "-f", "/dev/null"]
+    volumes:
+      - ./terraform:/workspace
+    env_file:
+      - .env
+    profiles:
+      - tools

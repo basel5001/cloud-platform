@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+*.pyo
+.env
+*.db
+data/
+.git
+.github
+.venv
+venv
+node_modules
+.terraform
+*.tfstate*
+.ruff_cache
+.pytest_cache
+.mypy_cache
