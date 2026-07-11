@@ -1,5 +1,12 @@
 # Cloud Platform — Internal Developer Portal
 
+![CI](https://github.com/basel5001/cloud-platform/actions/workflows/ci.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
 Self-hosted developer platform for service catalog management, self-service infrastructure provisioning (Terraform), environment lifecycle, cost tracking, and AI-powered infrastructure advice via AWS Bedrock.
 
 ```
